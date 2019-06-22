@@ -1,0 +1,17 @@
+{
+    "name": "Asana Expander",
+    "version": "1.0.0",
+    "description": "",
+    "icons": {
+        "32": "img/icon-32.png",
+        "48": "img/icon-48.png",
+        "128": "img/icon-128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://*.asana.com/*"],
+            "js": ["contentScript.js"]
+        }
+    ],
+    "manifest_version": 2
+}
