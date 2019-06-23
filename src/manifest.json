@@ -7,11 +7,17 @@
         "48": "img/icon-48.png",
         "128": "img/icon-128.png"
     },
+    "background": {
+        "scripts":["backgroundScript.js"]
+    },
     "content_scripts": [
         {
             "matches": ["https://*.asana.com/*"],
             "js": ["contentScript.js"]
         }
+    ],
+    "permissions": [
+        "tabs"
     ],
     "manifest_version": 2
 }
